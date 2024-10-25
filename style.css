@@ -9,12 +9,28 @@ body{
     background-color: black;
 }
 
+.account{
+    margin-right: 1rem;
+    text-align: right;
+    
+}
+
+.news{
+    color: white;
+    text-align: center;
+    font-family: "Oxanium", sans-serif;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
 
 
 .search{
     font-weight: bolder;
     color: grey;
     text-decoration: underline;
+    font-family: "Oxanium", sans-serif;
+    margin-left: 1rem;
+
 
 }
 
@@ -34,6 +50,7 @@ body{
     align-items: center;
     height: 100vh; /* Ajusta según sea necesario */
     flex-direction: column;
+    margin: 0;
     margin: 0;
 }
 
@@ -102,9 +119,13 @@ header{
     padding: 0; /* Ajusta el espacio interior según sea necesario */
 }
 
+header .search , header .account{
+    flex: 1;
+}
+
 main{
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: .5rem;
     flex-wrap: wrap;
 }
